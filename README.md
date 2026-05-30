@@ -4,15 +4,25 @@ Implementacion de procesador RISC-V single cycle en verilog
 ## Bloques funcionales requeridos
 
 ProgramCounter: Mantiene la dirección de la instrucción actual.
+
 InstructionMemory: Memoria ROM que almacena el conjunto de instrucciones del programa.
+
 RegisterFile: Banco de registros (32 registros de 32 bits), con dos lecturas y una escritura.
+
 ImmediateGenerator: Extrae e interpreta los campos inmediatos según el tipo de instrucción (I, S, B…).
+
 ALUControl: Genera la señal de operación de la ALU a partir de la instrucción.
+
 ALU: Unidad lógica-aritmética que ejecuta operaciones según la instrucción.
+
 ControlUnit: Genera señales de control globales según el opcode.
+
 DataMemory: Memoria RAM para operaciones de carga/almacenamiento.
+
 Mux: Permiten seleccionar entradas hacia la ALU o direcciones.
+
 Adder: Suma de direcciones para el cálculo del siguiente PC.
+
 BranchComparator: Compara registros para instrucciones de salto condicional.
 
 ## Estructura del proyecto 
