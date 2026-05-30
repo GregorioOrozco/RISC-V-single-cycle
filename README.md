@@ -1,7 +1,7 @@
 # RISC-V-single-cycle
 Implementacion de procesador RISC-V single cycle en verilog
 
-##Bloques funcionales requeridos
+## Bloques funcionales requeridos
 
 ProgramCounter: Mantiene la dirección de la instrucción actual.
 InstructionMemory: Memoria ROM que almacena el conjunto de instrucciones del programa.
@@ -15,11 +15,11 @@ Mux: Permiten seleccionar entradas hacia la ALU o direcciones.
 Adder: Suma de direcciones para el cálculo del siguiente PC.
 BranchComparator: Compara registros para instrucciones de salto condicional.
 
-##Estructura del proyecto 
+## Estructura del proyecto 
 /riscv_single_cycle/ │ ├── src/ │ ├── top.v ← Módulo principal (interconexión de todos los bloques) │ ├── program_counter.v │ ├── instruction_memory.v │ ├── control_unit.v │ ├── register_file.v │ ├── alu.v │ ├── alu_control.v │ ├── immediate_generator.v │ ├── data_memory.v │ ├── mux.v │ ├── branch_comparator.v │ └── adder.v │ ├── testbench/ │ └── top_tb.v ← Testbench para simular │ ├── program/ │ └── test_program.mem ←
 Código ensamblado para ejecutar
 
-##Instrucciones de desarrollo
+## Instrucciones de desarrollo
 
 1.- Diseñar cada módulo por separado. Verifica su funcionamiento mediante módulos de prueba individuales (unit testing).
 2.- Conectar todos los bloques en el módulo principal top.v, respetando el camino de datos típico de una arquitectura de un solo ciclo.
