@@ -22,7 +22,11 @@ Código ensamblado para ejecutar
 ## Instrucciones de desarrollo
 
 1.- Diseñar cada módulo por separado. Verifica su funcionamiento mediante módulos de prueba individuales (unit testing).
+
 2.- Conectar todos los bloques en el módulo principal top.v, respetando el camino de datos típico de una arquitectura de un solo ciclo.
+
 3.- Cargar el programa de prueba en la memoria de instrucciones (.mem en formato hexadecimal o binario).
+
 4.- Simular el procesador completo con el testbench top_tb.v. Observa señales clave: PC, instruction, ALUResult, RegWrite, MemRead, MemWrite, Branch, etc.
+
 5.- Verificar ejecución correcta de instrucciones: operaciones aritméticas, carga/almacenamiento (lw, sw), ramas (beq, bne) y saltos (jal, jalr).
